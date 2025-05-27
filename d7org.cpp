@@ -22,6 +22,7 @@ public:
 
         // }}
         // return ans;
+        /
         double ans=1.0;
         long nn=n;
         if (n<0)nn=nn*(-1);
