@@ -16,7 +16,9 @@ public:
         long ans=0;
         //while(n){
         while(n >= d){
-            int c=0;
+            //long is better
+            //int c=0;
+            long c=0;
             // while (n>(d<<c))
             while (n>(d<<(c+1))){
                 c++;
