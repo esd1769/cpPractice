@@ -22,21 +22,21 @@ public:
         }
         if (neg && ans >= INT_MAX) return INT_MAX;
         if (!neg && -ans <= INT_MIN) return INT_MIN;
-        return neg ? ans : -ans;
+        return neg ? (int)ans : (int)(-ans);
         
     }
 };
+
 int main() {
     Solution sol;
-    
-    // // Test cases
-    // cout << "10 / 3 = " << sol.divide(10, 3) << endl;
-    // cout << "-10 / 3 = " << sol.divide(-10, 3) << endl;
-    // cout << "7 / -3 = " << sol.divide(7, -3) << endl;
-    // cout << "-7 / -3 = " << sol.divide(-7, -3) << endl;
-    cout << "INT_MIN / -1 = " << sol.divide(INT_MIN, -1) << endl; // edge case
-    // cout << "INT_MIN / 1 = " << sol.divide(INT_MIN, 1) << endl;
-    // cout << "INT_MAX / 1 = " << sol.divide(INT_MAX, 1) << endl;
+
+    cout << "INT_MAX = " << INT_MAX << endl; // 2147483647
+    cout << "INT_MIN = " << INT_MIN << endl << endl; // -2147483648
+
+    cout << "INT_MIN / -1 = " << sol.divide(INT_MIN, -1) << " // should be INT_MAX (2147483647)" << endl;
+    cout << "INT_MIN / 1  = " << sol.divide(INT_MIN, 1)  << " // should be INT_MIN (-2147483648)" << endl;
+    cout << "INT_MAX / -1 = " << sol.divide(INT_MAX, -1) << " // should be -INT_MAX (-2147483647)" << endl;
+    cout << "INT_MAX / 1  = " << sol.divide(INT_MAX, 1)  << " // should be INT_MAX (2147483647)" << endl;
 
     return 0;
 }
