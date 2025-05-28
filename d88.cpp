@@ -5,24 +5,28 @@ using namespace std;
 class Solution {
 public:
     int divide(int dividend, int divisor) {
-        // Handle overflow case explicitly
-        if (dividend == INT_MIN && divisor == -1) return INT_MAX;
+        // Handle special cases directly
+        if (divisor == 1) return dividend;
+        if (divisor == -1) {
+            if (dividend == INT_MIN) return INT_MAX;
+            return -dividend;
+        }
 
-        // Determine sign of the result
         bool neg = (dividend < 0) ^ (divisor < 0);
 
-        // Use unsigned long long to safely store absolute values and avoid overflow on shifts
-        unsigned long long n = dividend < 0 ? -(unsigned long long)dividend : (unsigned long long)dividend;
-        unsigned long long d = divisor < 0 ? -(unsigned long long)divisor : (unsigned long long)divisor;
+        long n = dividend == INT_MIN ? (long)INT_MAX + 1 : abs(dividend);
+        long d = divisor == INT_MIN ? (long)INT_MAX + 1 : abs(divisor);
 
-        unsigned long long ans = 0;
-
-        // Iterate from the highest bit to the lowest
-        for (int i = 31; i >= 0; i--) {
-            if ((n >> i) >= d) {
-                ans += 1ULL << i;
-                n -= d << i;
+        long ans = 0;
+        while (n >= d) {
+            long temp = d;
+            long multiple = 1;
+            while (temp <= (n >> 1)) {
+                temp <<= 1;
+                multiple <<= 1;
             }
+            n -= temp;
+            ans += multiple;
         }
 
         return neg ? -(int)ans : (int)ans;
@@ -32,13 +36,13 @@ public:
 int main() {
     Solution sol;
 
-    cout << "INT_MAX = " << INT_MAX << endl; // 2147483647
-    cout << "INT_MIN = " << INT_MIN << endl << endl; // -2147483648
+    cout << "INT_MAX = " << INT_MAX << endl; 
+    cout << "INT_MIN = " << INT_MIN << endl << endl;
 
-    cout << "INT_MIN / -1 = " << sol.divide(INT_MIN, -1) << " // should be INT_MAX (2147483647)" << endl;
-    cout << "INT_MIN / 1  = " << sol.divide(INT_MIN, 1)  << " // should be INT_MIN (-2147483648)" << endl;
-    cout << "INT_MAX / -1 = " << sol.divide(INT_MAX, -1) << " // should be -INT_MAX (-2147483647)" << endl;
-    cout << "INT_MAX / 1  = " << sol.divide(INT_MAX, 1)  << " // should be INT_MAX (2147483647)" << endl;
+    cout << "INT_MIN / -1 = " << sol.divide(INT_MIN, -1) << " // should be INT_MAX" << endl;
+    cout << "INT_MIN / 1  = " << sol.divide(INT_MIN, 1)  << " // should be INT_MIN" << endl;
+    cout << "INT_MAX / -1 = " << sol.divide(INT_MAX, -1) << " // should be -INT_MAX" << endl;
+    cout << "INT_MAX / 1  = " << sol.divide(INT_MAX, 1)  << " // should be INT_MAX" << endl;
 
     return 0;
 }
