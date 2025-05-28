@@ -8,7 +8,7 @@ public:
         long d = abs((long)divisor);
         long ans=0;
         while(n >= d){
-            int c=0;
+            long c=0;
             while (n>(d<<(c+1))){
                 c++;
             }
