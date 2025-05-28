@@ -1,6 +1,10 @@
+#include <iostream>
+#include <climits>
+using namespace std;
 class Solution {
 public:
     int divide(int dividend, int divisor) {
+        if (dividend == INT_MIN && divisor == -1)return INT_MAX;
         bool neg=true;
         if (dividend <0 && divisor > 0) neg=false;
         if (dividend >0 && divisor < 0) neg=false;
@@ -22,3 +26,17 @@ public:
         
     }
 };
+int main() {
+    Solution sol;
+    
+    // // Test cases
+    // cout << "10 / 3 = " << sol.divide(10, 3) << endl;
+    // cout << "-10 / 3 = " << sol.divide(-10, 3) << endl;
+    // cout << "7 / -3 = " << sol.divide(7, -3) << endl;
+    // cout << "-7 / -3 = " << sol.divide(-7, -3) << endl;
+    cout << "INT_MIN / -1 = " << sol.divide(INT_MIN, -1) << endl; // edge case
+    // cout << "INT_MIN / 1 = " << sol.divide(INT_MIN, 1) << endl;
+    // cout << "INT_MAX / 1 = " << sol.divide(INT_MAX, 1) << endl;
+
+    return 0;
+}
