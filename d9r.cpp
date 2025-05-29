@@ -1,8 +1,9 @@
 class Solution {
 public:
-//logN-insert,for loop N,for lopp N...NlogN+N...sc...o(N)
-//brute forcer
+
     int removeDuplicates(vector<int>& nums) {
+        //logN-insert,for loop N,for lopp N...NlogN+N...sc...o(N)
+        //brute forcer
         set <int>st;
         int n=nums.size();
         for (int i=0;i<n;i++){
