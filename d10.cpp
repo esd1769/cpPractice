@@ -23,7 +23,9 @@ public:
             // for (int j=0;j<n;j++){
             for (int j=i+1;j<n;j++){
                 //if (i==j) continue;
-                if (nums[i]+nums[j]==target){ return {i, j} ;}
+                if (nums[i]+nums[j]==target)
+                { return {i, j} ;}
+                //problem....not return [];
 
             }
         }
