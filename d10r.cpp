@@ -18,4 +18,4 @@ public:
             
     }  
 };
-///set insert...map find-----logN.,no sc......creation-no tc ,only sc
+///set insert...map find-----logN...total O(n),no sc.unorder map--N..total O(n square).....creation-no tc ,only sc
