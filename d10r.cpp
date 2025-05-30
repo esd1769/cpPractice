@@ -19,3 +19,17 @@ public:
     }  
 };
 ///set insert...map find-----logN...total O(n),no sc.unorder map--N..total O(n square).....creation-no tc ,only sc
+//BUT FOR SORT --NLOGN
+
+int n=nums.size();
+int i=o;int r=n-1;
+sort(nums.begin(),nums.end());
+while(l<r){
+    int s=l+r;
+    if (s==target) return true;
+    else if (s>target) r--;
+    else l++;
+    }
+    return false;
+
+}
