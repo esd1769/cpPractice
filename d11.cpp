@@ -13,10 +13,14 @@ public:
         // for (int i=0;i<c0;i++){nums[index++]=0;}
         // for (int i=0;i<c1;i++){nums[index++]=1;}
         // for (int i=0;i<c2;i++){nums[index++]=2;}
-        
+      
         for (int i=0;i<c0;i++){nums[i]=0;}
         for (int i=c0;i<c1+c0;i++){nums[i]=1;}
-        for (int i=c1+c0;i<c2+c1+c0;i++){nums[i]=2;}
+        // int n=nums.size();
+        // for (int i=c1+c0;i<n;i++){nums[i]=2;}
+        for (int i=c1+c0;i<c1+c0+c2;i++){nums[i]=2;}
+        
+
        
     }
 };
