@@ -17,6 +17,9 @@ map<int,int>mpp;
     for (int i=0;i<nums.size();i++){
         mpp[nums[i]]++;
     }
+//       If you're just counting, use std::map<int, int> and mpp[nums[i]]++
+
+//       If using std::pair<int, int>, increment mpp[nums[i]].second++
      for (auto it:mpp){
         if (it.second>nums.size()/2) return it.first;
     }
