@@ -11,13 +11,14 @@ public:
     //     }
     //     return 0;
 
-    
-std::vector<std::pair<int, int>> mpp;
+
+//std::vector<std::pair<int, int>> mpp; mpp[i].first;else auto it:mpp
+map<int,int>mpp;
     for (int i=0;i<nums.size();i++){
-        mpp[nums[i]].second++;
+        mpp[nums[i]]++;
     }
-     for (int i=0;i<nums.size();i++){
-        if (mpp[i].second>nums.size()/2) return mpp[i].first;
+     for (auto it:mpp){
+        if (it.second>nums.size()/2) return it.first;
     }
     return -1;
     }
