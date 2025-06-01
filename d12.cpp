@@ -14,6 +14,7 @@ public:
 
 //std::vector<std::pair<int, int>> mpp; mpp[i].first;else auto it:mpp
 map<int,int>mpp;
+//NlogN...unorder map....o(n)...worst case o(n2)
     for (int i=0;i<nums.size();i++){
         mpp[nums[i]]++;
     }
