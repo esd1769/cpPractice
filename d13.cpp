@@ -3,6 +3,7 @@
 //subarray-consiquative part[1,0,-1]...not [1,-1]
 //sub sequence....[1,-1]
 //maxi=max(maxi,sum);...comma,not semicolon in max min
+//Kadane's Algorithm | Maximum Subarray Sum
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -16,23 +17,34 @@ public:
             if (sum<0)sum=0;
             
         }
-        return (int)maxi;
+        return (int)maxi;}
+        //brute..tle
+        // int maxi=INT_MIN;
+        // for (int i=0;i<nums.size();i++){
+        //     for(int j=i;j<nums.size();j++){
+        //         int sum=0;
+        //         for (int k=i;k<=j;k++){
+        //             sum+=nums[k]; 
+        //         }
+        //         maxi=max(maxi,sum);
+        //     }
+        // }
+        // return maxi;
+    //     //BETTER
+    //             int maxi=INT_MIN;
+    //     for (int i=0;i<nums.size();i++){
+    //         int sum=0;
+    //         for(int j=i;j<nums.size();j++){
+                
+            
+    //             sum+=nums[j]; 
+                
+    //             maxi=max(maxi,sum);
+    //         }
+    //     }
+    //     return maxi;
         
-    }
-};
-//         int maxi=INT_MIN;
-//         for (int i=0;i<nums.size();i++){
-//             for(int j=i;j<nums.size();j++){
-//                 int sum=0;
-//                 for (int k=i;k<=j;k++){
-//                     sum+=nums[k]; 
-//                 }
-//                 maxi=max(maxi,sum);
-//             }
-//         }
-//         return maxi;
-        
-//     }
+    // }
    
     
-// };
+};
