@@ -1,3 +1,5 @@
+
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -20,7 +22,7 @@ public:
 };
 ///set insert...map find-----logN...total O(n),no sc.unorder map--N..total O(n square).....creation-no tc ,only sc
 //BUT FOR SORT --NLOGN
-
+//dutch national flag algo
 int n=nums.size();
 int i=o;int r=n-1;
 sort(nums.begin(),nums.end());
