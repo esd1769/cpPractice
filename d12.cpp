@@ -1,3 +1,4 @@
+  //mooree voting algo
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
