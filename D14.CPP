@@ -1,3 +1,5 @@
+//binary search basic
+
 class Solution {
         //O(logN)
             //recurrssive technic
