@@ -1,4 +1,5 @@
 class Solution {
+        //O(logN)
             //recurrssive technic
     private:int bs(vector<int>& nums, int target,int low ,int high){
         if (low>high)return -1;
