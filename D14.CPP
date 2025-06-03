@@ -1,5 +1,8 @@
 //binary search basic
 //not only in array,but also in dictionary and everything
+//overflow...if low,high..both become INT_MAx...
+//either long long low ,high mid
+//or mid=low+((high-low)/2) 
 
 class Solution {
         //O(logN)
