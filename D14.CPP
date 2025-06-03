@@ -1,4 +1,5 @@
 //binary search basic
+//not only in array,but also in dictionary and everything
 
 class Solution {
         //O(logN)
