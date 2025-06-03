@@ -1,4 +1,5 @@
 class Solution {
+            //recurrssive technic
     private:int bs(vector<int>& nums, int target,int low ,int high){
         if (low>high)return -1;
         int mid=(low+high)/2;
@@ -8,6 +9,7 @@ class Solution {
     }
 public:
     int search(vector<int>& nums, int target) {
+                //recurrssive technic
         int low=0,high=nums.size()-1,mid=0;
             return bs(nums,target,low ,high);
             //while loop technic
