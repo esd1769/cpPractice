@@ -3,7 +3,7 @@
 //overflow...if low,high..both become INT_MAx...
 //either long long low ,high mid
 //or mid=low+((high-low)/2)
-// class Solution {
+
 //     //O(logN)
 //             //recurrssive technic
 //     private:int bs(vector<int>& nums, int target,int low ,int high){
@@ -22,21 +22,25 @@
     
             //mid=low+high/2..wrong
             //mid=(low+high)/2;
+class Solution {
+public:
 int search(vector<int>& nums, int target) {
                 int low=0,high=nums.size()-1,mid=0;
         while(low<=high){
             mid=low+((high-low)/2);
             if (nums[mid]==target)return mid;
             if (nums[low]<=nums[mid]){
-                if ((nums[mid]>=target)&&(target>=nums[low])){ high=mid-1;}
+                if ((nums[mid]>=target)&&(target>=nums[low])){ high=mid-1;
+                 //imagine nums[mid]=target=nums[low]
+                //imagine nums[mid]=target  only
+                //imagine target=nums[low]
+                }
                 else{low=mid+1;}
             }
             else{ 
-                if ((nums[high]>target)&& (target>=nums[mid])){ low=mid+1;}
+                if ((nums[high]>=target)&& (target>=nums[mid])){ low=mid+1;}
                 else{ high=mid-1;}}
         }
        return -1;
-            
-    
     }
 };
