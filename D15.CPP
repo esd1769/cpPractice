@@ -22,6 +22,8 @@
     
             //mid=low+high/2..wrong
             //mid=(low+high)/2;
+                int low=0,high=nums.size()-1,mid=0;
+        while(low<=high){
             mid=low+((high-low)/2);
             if (nums[mid]==target)return mid;
             if (nums[low]<=nums[mid]){
