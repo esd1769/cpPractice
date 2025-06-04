@@ -22,7 +22,7 @@
     
             //mid=low+high/2..wrong
             //mid=(low+high)/2;
-                int search(vector<int>& nums, int target) {
+int search(vector<int>& nums, int target) {
                 int low=0,high=nums.size()-1,mid=0;
         while(low<=high){
             mid=low+((high-low)/2);
