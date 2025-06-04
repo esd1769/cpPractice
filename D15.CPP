@@ -19,8 +19,7 @@
     //     //recurrssive technic
     //         return bs(nums,target,low ,high);
             //while loop technic
-        int low=0,high=nums.size()-1,mid=0;
-        while(low<=high){
+    
             //mid=low+high/2..wrong
             //mid=(low+high)/2;
             mid=low+((high-low)/2);
