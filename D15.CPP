@@ -30,7 +30,7 @@ public:
                 else{low=mid+1;}
             }
             else{ 
-                if ((nums[high]>=target)&&(target>=nums[mid])){ low=mid+1;}
+                if ((nums[high]>=target)&& (target>=nums[mid])){ low=mid+1;}
                 else{ high=mid-1;}}
         }
        return -1;
