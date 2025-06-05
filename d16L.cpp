@@ -1,3 +1,7 @@
+//first solve for unique elements
+//then 
+
+
 //binary search basicO(logN)
 //not only in array,but also in dictionary and everything
 //overflow...if low,high..both become INT_MAx...
