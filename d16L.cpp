@@ -1,7 +1,7 @@
 //first solve for unique elements
 //then look for the duplicate cases 
 //where uniques fails
-//
+//try to solve them
 
 
 //binary search basicO(logN)
