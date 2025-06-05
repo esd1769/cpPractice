@@ -1,3 +1,4 @@
+//continue is a must
 //first solve for unique elements
 //then look for the duplicate cases 
 //where uniques fails
