@@ -35,6 +35,11 @@ public:
             
             mid=low+((high-low)/2);
             if (nums[mid]==target)return true;
+            if ((nums[low]==nums[mid])&& (nums[mid]==nums[high])){
+                low++;
+                high--;
+                continue;
+            }
             if (nums[low]<=nums[mid]){
                 if ((nums[mid]>=target)&&(target>=nums[low])){ high=mid-1;}
                 else{low=mid+1;}
