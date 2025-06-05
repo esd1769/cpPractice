@@ -20,17 +20,19 @@
 //             else if (nums[mid]<target) return bs(nums,target,mid+1,high);
 //             else{ return bs(nums,target,low,mid-1);}
 //     }
-class Solution {
-public:
-    bool search(vector<int>& nums, int target) {
+
     //     int low=0,high=nums.size()-1,mid=0;
     //     //recurrssive technic
     //         return bs(nums,target,low ,high);
             //while loop technic
-        int low=0,high=nums.size()-1,mid=0;
-        while(low<=high){
             //mid=low+high/2..wrong
             //mid=(low+high)/2;
+class Solution {
+public:
+    bool search(vector<int>& nums, int target) {
+        int low=0,high=nums.size()-1,mid=0;
+        while(low<=high){
+            
             mid=low+((high-low)/2);
             if (nums[mid]==target)return true;
             if (nums[low]<=nums[mid]){
