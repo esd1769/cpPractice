@@ -3,3 +3,4 @@
 //CUZ rotated array have only one low>mid case
 //if more than one...if is not sorted anymore 
 //the part where the rotating point is,has minimum
+//WHY provide equal..with low??
