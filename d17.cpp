@@ -5,4 +5,4 @@
 //the part where the rotating point is,has minimum
 //WHY provide equal..with low??
 //why nums[low]<=nums[mid]..not else??
-//
+//as [2,1]..both mid and low is 2...not 1...high
