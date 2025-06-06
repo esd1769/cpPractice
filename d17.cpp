@@ -13,6 +13,7 @@ public:
         while(low<=high){
             mid=low+((high-low)/2);
             if (nums[low]<=nums[mid]){
+               // as [2,1]..both mid and low is 2...not 1...high
                 ans=min(ans,nums[low]);
                 low=mid+1;
                 
