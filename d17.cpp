@@ -6,3 +6,26 @@
 //WHY provide equal..with low??
 //why nums[low]<=nums[mid]..not else??
 //as [2,1]..both mid and low is 2...not 1...high
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+        int low=0,high=nums.size()-1,mid=0,ans=INT_MAX;
+        while(low<=high){
+            mid=low+((high-low)/2);
+            if (nums[low]<=nums[mid]){
+                ans=min(ans,nums[low]);
+                low=mid+1;
+                
+
+            }
+            else{
+                ans=min(ans,nums[mid]);
+                high=mid-1;
+
+            }
+
+        }
+        return ans;
+        
+    }
+};
