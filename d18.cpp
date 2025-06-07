@@ -4,3 +4,5 @@
 //when we have lots of edge cases..we use triming parts by bs
 //for removing edge condition..i will modify low,high
 //one single element..
+//before that single elements...even,odd-same
+//after that single elements...odd,even-same
