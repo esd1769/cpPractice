@@ -8,3 +8,4 @@
 //after that single elements...odd,even-same
 //always
 //even odd...single....odd eeven
+//0     1 ...single.....3   4
