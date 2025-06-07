@@ -19,6 +19,11 @@ public:
     int singleNonDuplicate(vector<int>& nums) {
         //modify low,high..for ignoring checking i=-1,i=n..which gives error
         int low=1,high=nums.size()-2,mid=0;
+        while(low<=high){
+            mid=low+((high-low)/2);
+            if ((nums[mid-1]!=nums[mid])&&(nums[mid]!=nums[mid+1])) return nums[mid];
+            else if ((mid%2==1)&&)
+        }
         
     }
 };
