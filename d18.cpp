@@ -17,13 +17,16 @@
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
+        if (nums.size()==1) return nums[0];
         //modify low,high..for ignoring checking i=-1,i=n..which gives error
         int low=1,high=nums.size()-2,mid=0;
         while(low<=high){
             mid=low+((high-low)/2);
             if ((nums[mid-1]!=nums[mid])&&(nums[mid]!=nums[mid+1])) return nums[mid];
-            else if ((mid%2==1)&&)
+            else if (((mid%2==1)&&(nums[mid-1]==nums[mid]))||((mid%2==0)&&(nums[mid+1]==nums[mid]))) low=mid+1;
+            else{high=mid-1;}
         }
+        return -1;//dummy..it will return already from inside of  while looop
         
     }
 };
