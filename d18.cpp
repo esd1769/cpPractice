@@ -8,5 +8,5 @@
 //after that single elements...odd,even-same
 //always
 //even odd...single....odd eeven
-//0     1 ...single.....3   4
 //1     1       2       3   3
+//0.....1 ...single.....3...4
