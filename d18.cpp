@@ -12,3 +12,4 @@
 //0.....1 ...single.....3...4
 //if fucntion return type is integer
 //always return statement..return -1;
+//although it is never run
