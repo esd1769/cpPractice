@@ -13,3 +13,4 @@
 //if fucntion return type is integer
 //always return statement..return -1;
 //although it is never run
+//binary search..just focus on elimination..trim parts
