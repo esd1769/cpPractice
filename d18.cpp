@@ -10,3 +10,4 @@
 //even odd...single....odd eeven
 //1     1       2       3   3
 //0.....1 ...single.....3...4
+//if fucntion return type is integer
