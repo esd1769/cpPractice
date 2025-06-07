@@ -17,7 +17,7 @@
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
-        //modify low,high
+        //modify low,high..for ignoring checking i=-1,i=n
         
     }
 };
