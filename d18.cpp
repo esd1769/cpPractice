@@ -14,3 +14,10 @@
 //always return statement..return -1;
 //although it is never run
 //binary search..just focus on elimination..trim parts
+class Solution {
+public:
+    int singleNonDuplicate(vector<int>& nums) {
+        
+        
+    }
+};
