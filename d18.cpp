@@ -18,7 +18,7 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
         //modify low,high..for ignoring checking i=-1,i=n..which gives error
-        int 
+        int low=1,high=nums.size()-2,mid=0;
         
     }
 };
