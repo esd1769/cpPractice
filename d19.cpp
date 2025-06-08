@@ -2,3 +2,4 @@
 //must be stop exicutimg i=n,i=-1...while dealing array
 //always see input and output of question
 //logN..searching+sort =binary search
+//break problem in small..
