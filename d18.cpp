@@ -18,11 +18,17 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
        
-        //modify low,high..for ignoring checking i=-1,i=n..which gives error
-        int low=1,n=nums.size(),high=n-2,mid=0;
+        
+         
+         //thses edge cases are must
          if (n==1) return nums[0];
          if (nums[0]!=nums[1] )return nums[0];
          if (nums[n-2]!=nums[n-1]) return nums[n-1];
+
+
+         
+         //modify low,high..for ignoring checking i=-1,i=n..which gives error
+        int low=1,n=nums.size(),high=n-2,mid=0;
         while(low<=high){
             mid=low+((high-low)/2);
             if ((nums[mid-1]!=nums[mid])&&(nums[mid]!=nums[mid+1])) return nums[mid];
