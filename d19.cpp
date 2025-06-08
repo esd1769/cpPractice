@@ -18,12 +18,12 @@ public:
             if ((nums[mid]>nums[mid-1])&&(nums[mid]>nums[mid+1]))return mid;
             else if (nums[mid]>nums[mid-1]) low=mid+1;
             //both work for multiple peaks or one peak
-            else{ high=mid-1;}
+            //for this else statement
+            else{ high=mid-1;}//this
 
 
         }
         return -1;
-        
         
     }
 };
