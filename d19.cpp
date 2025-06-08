@@ -5,3 +5,4 @@
 //break problem in small..lets consider,array has 1peak
 //IF FUNCTION has return type int...you need to give to give hypothetical return -1
 //controlling edge case more efficiently
+//comes from experience
