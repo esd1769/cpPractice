@@ -3,3 +3,4 @@
 //always see input and output of question
 //logN..searching+sort =binary search
 //break problem in small..lets consider,array has 1peak
+//IF FUNCTION has return type int...you
