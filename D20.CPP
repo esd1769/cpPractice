@@ -9,4 +9,4 @@
 //linear search....... to.........binary search
 //O(n).................to..........O(logN)
 //range matters...for time complexity
-//so 
+//so try to minimize the range
