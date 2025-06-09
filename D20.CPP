@@ -5,3 +5,4 @@
 
 
 //so binary search
+//whenever i get 3parts...i can replace 
