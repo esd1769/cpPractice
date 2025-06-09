@@ -2,6 +2,15 @@
 
 
 //custom one-
+// long long maxi(vector<int>& piles){
+//         long long maxi=INT_MIN;
+//         int v = piles.size();
+//         for (int i = 0; i < v; i++) {
+//             if (piles[i]>maxi) maxi=piles[i];
+            
+//         }
+//         return maxi;
+//     }
 
 
 //WHEN WE SEE PATERN..IT is binary search
