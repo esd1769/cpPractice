@@ -6,4 +6,5 @@
 
 //so binary search
 //whenever i get 3parts...i can replace 
-//linear search to binary search
+//linear search....... to.........binary search
+//O(n).................to..........O(logN)
