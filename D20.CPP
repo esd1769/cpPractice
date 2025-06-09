@@ -24,7 +24,8 @@ private:int totalHourCount(vector<int>& piles, int r){
 }
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        int n=*max_element(piles.begin(), piles.end()),low=0,high=n-1,mid=0,ans=INT_MAX;;
+        // int n=*max_element(piles.begin(), piles.end()),low=0,high=n-1,mid=0,ans=INT_MAX;
+        int n=*max_element(piles.begin(), piles.end()),low=1,high=n,mid=0,ans=INT_MAX;
         while (low<=high){
             mid=(low+((high-low)/2));
             ans=totalHourCount(piles,mid);
@@ -37,7 +38,7 @@ public:
 
         }
 
-        return ans;
+        return mid;
 
         
     }
