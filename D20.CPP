@@ -11,4 +11,4 @@
 //range matters...for time complexity
 //so try to minimize the range
 
-//if you could bring sort term,
+//if you could bring sort term,then bs
