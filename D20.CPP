@@ -1,3 +1,5 @@
+//int n=*max_element(piles.begin(), piles.end())...for highest element
+
 //WHEN WE SEE PATERN..IT is binary search
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000000000000000
 //not possible                minimulpossible         allpossible 
