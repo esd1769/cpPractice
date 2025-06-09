@@ -25,6 +25,8 @@ private:
         }
         return totalhour;
     }
+    //int n=*max_element(piles.begin(), piles.end())...for highest element
+    //custom one-
     long long maxi(vector<int>& piles){
         long long maxi=INT_MIN;
         int v = piles.size();
