@@ -8,4 +8,5 @@
 //whenever i get 3parts...i can replace 
 //linear search....... to.........binary search
 //O(n).................to..........O(logN)
-//range matters...for 
+//range matters...for time complexity
+//so 
