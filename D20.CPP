@@ -13,6 +13,7 @@
 //range matters...for time complexity
 //so try to minimize the range
 
+
 //if you could bring sort term,then bs
 //int n=*max_element(piles.begin(), piles.end())...for highest element
 class Solution {
