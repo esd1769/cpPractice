@@ -44,7 +44,7 @@ public:
         if (m*k>n)return -1;
         while(low<=high){
             mid=low+((high-low)/2);
-            if (isPossible(bloomDay,mid,m,k,low,high)) {
+            if (isPossible(bloomDay,mid,m,k)) {
                 ans=mid;
                 high=mid-1;
 
