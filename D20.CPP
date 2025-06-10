@@ -15,6 +15,8 @@
 
 //if you could bring sort term,then bs
 //int n=*max_element(piles.begin(), piles.end())...for highest element
+#include <vector>
+#include <math.h>
 class Solution {
 private:
     long long totalHourCount(vector<int>& piles, int r) {  // Use long long here
