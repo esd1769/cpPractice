@@ -32,7 +32,9 @@ public:
         while(low<=high){
             mid=low+((high-low)/2);
             if (isPossible(bloomDay,mid,m,k)) {
-                
+                ans=mid;
+                high
+
             }
 
         }
