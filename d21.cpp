@@ -28,7 +28,7 @@ int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
         }
         else{
             count=0;
-            total+=
+            total+=bloomDay[i]/k;
         }
         
 
