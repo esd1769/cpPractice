@@ -21,7 +21,11 @@
 class Solution {
 private:
 int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
-    for (int i=0;i<bloomDay.size();i++)
+    int count=0,total=0;
+    for (int i=0;i<bloomDay.size();i++){
+        count+=bloomDay[i]/
+
+    }
 
 
 
