@@ -21,7 +21,7 @@
 class Solution {
 private:
 int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
-    for (int)
+    for (int i=0,i<=)
 
 
 
