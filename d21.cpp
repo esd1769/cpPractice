@@ -20,7 +20,7 @@
 
 class Solution {
 private:
-int isPossible(vector<int>& bloomDay, int m, int k){
+int isPossible(vector<int>& bloomDay,int day, int m, int k){
 
 
 }
@@ -31,6 +31,9 @@ public:
         if (m*k>n)return -1;
         while(low<=high){
             mid=low+((high-low)/2);
+            if (isPossible(bloomDay,mid,m,k)) {
+                
+            }
 
         }
         
