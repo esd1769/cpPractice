@@ -5,3 +5,6 @@ npx react-native start
 cammal case
 comma
 npx @react-native-community/cli init--appname---
+npm install @react-navigation/native @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-contextnpm install @react-navigation/nativ
+npm install @react-navigation/bottom-tabs
