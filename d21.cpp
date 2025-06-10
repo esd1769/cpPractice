@@ -20,7 +20,7 @@
 
 class Solution {
 private:
-int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
+bool isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
     int count=0,total=0;
     for (int i=0;i<bloomDay.size();i++){
         if (bloomDay[i]<=k){
@@ -38,6 +38,7 @@ int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
         
 
     }
+    
 
 
 
