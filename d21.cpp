@@ -21,9 +21,9 @@
 class Solution {
 private:
 bool isPossible(vector<int>& bloomDay,int day, int m, int k){
-    int count=0,total=0;
+    long long count=0,total=0;
     for (int i=0;i<bloomDay.size();i++){
-        if (bloomDay[i]<=k){
+        if (bloomDay[i]<=day){
             count++;
         }
         else{
@@ -34,7 +34,7 @@ bool isPossible(vector<int>& bloomDay,int day, int m, int k){
     }
         //last count will not be 0
         total+=count/k;
-        return total<=m;
+        return total>=m;
     
 }
 
