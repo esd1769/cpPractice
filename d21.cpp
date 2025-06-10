@@ -30,6 +30,7 @@ public:
         int low=mini(bloomDay),high=maxi(bloomDay),mid=0,n=BloomDay.size(),ans=INT_MAX;
         if (m*k>n)return -1;
         while(low<=high){
+            mid=low+((high-low)/2);
 
         }
         
