@@ -1,0 +1,1 @@
+if (m*k>n)return -1;
