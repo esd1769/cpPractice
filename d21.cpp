@@ -38,7 +38,8 @@ bool isPossible(vector<int>& bloomDay,int day, int m, int k){
     
 }
 
-//better to take everything long long
+//better to take everything long long 
+//for this-
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
         int low=*min_element(bloomDay.begin(), bloomDay.end()),high=*max_element(bloomDay.begin(), bloomDay.end()),mid=0,n=bloomDay.size(),ans=-1;
