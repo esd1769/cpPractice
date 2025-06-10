@@ -20,28 +20,22 @@
 
 class Solution {
 private:
-bool isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
+bool isPossible(vector<int>& bloomDay,int day, int m, int k){
     int count=0,total=0;
     for (int i=0;i<bloomDay.size();i++){
         if (bloomDay[i]<=k){
             count++;
         }
         else{
+            
+            total+=count/k;
             count=0;
-            total+=bloomDay[i]/k;
         }
-        //last count will not be 0
-        total+=bloomDay[i]/k;
-        return total<=m;
-
-
-        
-
     }
-
-
-
-
+        //last count will not be 0
+        total+=count/k;
+        return total<=m;
+    
 }
 
 public:
