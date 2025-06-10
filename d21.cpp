@@ -32,6 +32,7 @@ int isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
         }
         //last count will not be 0
         total+=bloomDay[i]/k;
+        return total<=m;
 
 
         
