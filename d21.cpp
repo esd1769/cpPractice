@@ -46,7 +46,7 @@ bool isPossible(vector<int>& bloomDay,int day, int m, int k,int low,int high){
 
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
-        int low=*min_element(piles.begin(), piles.end()),high=*max_element(piles.begin(), piles.end()),mid=0,n=BloomDay.size(),ans=-1;
+        int low=*min_element(bloomDay.begin(), bloomDay.end()),high=*max_element(bloomDay.begin(), bloomDay.end()),mid=0,n=BloomDay.size(),ans=-1;
         if (m*k>n)return -1;
         while(low<=high){
             mid=low+((high-low)/2);
