@@ -1,5 +1,10 @@
 //general loop O(n)
 //try to covert loop to bs for O(logN) 
+
+
+
+
+
 //WHEN WE SEE PATERN..IT is binary search
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxx000000000000000000000000000000000
 //not possible                minimulpossible         allpossible 
@@ -13,5 +18,17 @@
 //range matters...for time complexity
 //so try to minimize the range
 
+class Solution {
+private:int minDays(vector<int>& bloomDay, int m, int k){
 
-if (m*k>n)return -1;
+    
+}
+public:
+    int minDays(vector<int>& bloomDay, int m, int k) {
+        int low=mini,high=maxi,mid=0,n=BloomDay.size(),ans=INT_MAX;
+        if (m*k>n)return -1;
+
+        
+    }
+};
+
