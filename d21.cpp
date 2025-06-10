@@ -19,13 +19,16 @@
 //so try to minimize the range
 
 class Solution {
-private:int minDays(vector<int>& bloomDay, int m, int k){
+private:
+int isPossible(vector<int>& bloomDay, int m, int k){
 
-    
+
 }
+
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
-        int low=mini,high=maxi,mid=0,n=BloomDay.size(),ans=INT_MAX;
+        int low=mini(bloomDay),high=maxi(),mid=0,n=BloomDay.size(),ans=INT_MAX;
+        int low=mini(bloomDay),high=maxi(),mid=0,n=BloomDay.size(),ans=INT_MAX;
         if (m*k>n)return -1;
 
         
