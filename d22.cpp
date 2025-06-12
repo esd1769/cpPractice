@@ -1,6 +1,23 @@
 //upper bound and lower bound...sql
 
+// vector<int> nums = {1, 3, 5, 5, 5, 7, 9};
+// Target = 5:
 
+// Lower Bound: Index 2
+
+// Upper Bound: Index 5
+
+// Target = 6:
+
+// Lower Bound: Index 5
+
+// Upper Bound: Index 5
+
+// Target = 9:
+
+// Lower Bound: Index 6
+
+// Upper Bound: Index 7
 
 //lower bound
 class Solution {
