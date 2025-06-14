@@ -1,8 +1,11 @@
+///master missied k = k % n; in optimal solution
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
+         //he missed
         k = k % n;  // Reduce k if it's larger than the size of the array
+        //he missed
         if (k == 0) return;  // No need to rotate if k is 0 or a multiple of n
 
         // Reverse the entire array
