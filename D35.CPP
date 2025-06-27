@@ -13,8 +13,8 @@ class Solution {
 private:
 int maxPathSumFinder(TreeNode* root,int& maxi){
     if (root==NULL)return 0;
-    int left=max(0,maxPathSumFinder(root->left,maxi));
-    int right=max(0,maxPathSumFinder(root->right,maxi));
+    int left=max(0,maxPathSumFinder(root->left,maxi));//change here like this
+    int right=max(0,maxPathSumFinder(root->right,maxi));//or use 
     maxi=max(maxi,left+right+root->val);
     return root->val+max(left,right);
 
