@@ -14,7 +14,7 @@ public:
     int maxPathSum(TreeNode* root) {
         int maxi=0;
         //why different functuilon?
-        //because maxi wont be global variable
+        //because maxi wont be global variable everytime you call the recursion
         
         
     }
