@@ -22,7 +22,7 @@ int maxPathSumFinder(TreeNode* root,int& maxi){
 }
 public:
     int maxPathSum(TreeNode* root) {
-        int maxi=INT_MIN;
+        int maxi=INT_MIN;//not maxi=0
         //why different functuilon?
         //because maxi wont be global variable everytime you call the recursion
         //it will initoialize with 0
