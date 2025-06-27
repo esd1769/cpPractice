@@ -15,13 +15,13 @@ int maxPathSumFinder(TreeNode* root,int& maxi){
     if (root==NULL)return 0;
     int left=max(0,maxPathSumFinder(root->left,maxi));
     int right=max(0,maxPathSumFinder(root->right,maxi));
-    maxi=max(maxi,left+right+root->val)
+    maxi=max(maxi,left+right+root->val);
     return root->val+max(left,right);
 
 }
 public:
     int maxPathSum(TreeNode* root) {
-        int maxi=0;
+        int maxi=INT_MIN;
         //why different functuilon?
         //because maxi wont be global variable everytime you call the recursion
         //it will initoialize with 0
