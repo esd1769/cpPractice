@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+#include <climits>
 class Solution {
 private:
 int maxPathSumFinder(TreeNode* root,int& maxi){
