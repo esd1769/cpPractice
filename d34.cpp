@@ -13,6 +13,7 @@ class Solution {
 public:
     bool isBalanced(TreeNode* root) {
         return maxDepthMod(root)!=-1;
+        //for recurssion,use different func
         
         
     }
