@@ -7,7 +7,8 @@
  * 
  *     TreeNode *right;
  * 
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode() : val(0), left(nullptr), 
+ * right(nullptr) {}
  * 
  * 
  *     TreeNode(int x) :
