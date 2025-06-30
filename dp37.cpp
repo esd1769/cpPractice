@@ -5,3 +5,4 @@
 //no repeat+sort=set
 //repeat+sort=multiset
 //java-pq-max value go first?
+//2data structure
