@@ -20,7 +20,7 @@
 class Solution {
 public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
-        queue<pair<TreeNode,pair<
+        queue<pair<TreeNode,pair<int,int>>>todo;
         
     }
 };
