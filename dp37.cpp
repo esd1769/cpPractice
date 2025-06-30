@@ -7,7 +7,8 @@
 //java-pq-max value go first?
 //2data 
 
-//queue/vec  -push_bach
+//queue  -push
+//vec  -push_back
 
 
 /**
@@ -26,7 +27,7 @@ public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
         queue<pair<TreeNode,pair<int,int>>>todo;
         map<int,map<int,mutliset<int>>>nodes;
-        todo.push_back(root)
+        todo.push(root)
         
     }
 };
