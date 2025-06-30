@@ -27,7 +27,11 @@ public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
         queue<pair<TreeNode,pair<int,int>>>todo;
         map<int,map<int,mutliset<int>>>nodes;
-        todo.push(root)
+        todo.push(root,{0,0});
+        while(!todo.empty()){
+
+            
+        }
         
     }
 };
