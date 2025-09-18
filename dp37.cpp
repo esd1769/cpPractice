@@ -22,6 +22,16 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+
+
+
+
+
+
+
+
+ //MAP SORTED
 class Solution {
 public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
